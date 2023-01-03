@@ -64,7 +64,7 @@ STATES_CAPITALS = {
     'Washington' : 'Olympia',
     'West Virginia' : 'Charleston',
     'Wisconsin' : 'Madison',
-    'Wyoming' : 'Cheyenne',
+    'Wyoming' : 'Cheyenne'
 }
 
 
@@ -75,12 +75,12 @@ def capital_of_Idaho():
 
 def all_states():
     # Your code here
-    return STATES_CAPITALS
+    return STATES_CAPITALS.keys()
     pass
 
 def all_capitals():
     # Your code here
-    return STATES_CAPITALS.keys()
+    return STATES_CAPITALS.values()
     pass
 
 def states_capitals_string():
@@ -92,8 +92,6 @@ def states_capitals_string():
     return arrowStr
     pass
 
-
-
 def get_state(capital):
     new_dict = {}
     for pair in STATES_CAPITALS.items():
@@ -104,7 +102,9 @@ def get_state(capital):
     pass
 
 
-
+# def test_states_capitals_string():
+#     print(states_capitals_string())
+#     assert states_capitals_string()
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
 
